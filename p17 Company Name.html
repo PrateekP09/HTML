@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/p17(payslip).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <style>
+        table{
+            width: 700px;
+        }
+        table,
+        tr,
+        td,
+        th{
+           border: 1px solid black;
+           border-collapse: collapse;
+           text-align: center; 
+        }
+        td,
+        th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>payslip</h1>
+    <table>
+        <tbody><tr>
+            <th>Company Name <br> address</th>
+        </tr>
+    </tbody></table>
+    Employee Name:____________________ <br>
+    Designation:______________________ <br>
+    Month &amp; Date:_____________________ <br>
+    <br><table> 
+        <tbody><tr>
+            <th>Earnings</th>
+            <td></td>
+            <th>deductions</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Basic &amp; Da</td>
+            <td>5200</td>
+            <td>Provident Fund</td>
+            <td>358.00</td>
+        </tr>
+
+        <tr>
+         <td>HRA</td>
+         <td>3000.0</td>
+         <td>E.S.I</td>
+         <td>120.0</td>
+        </tr>
+        
+        <tr>
+            <td>Conveyance</td>
+            <td>500.0</td>
+            <td>L.O.A.N</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"></td>
+            <td>Profession Tax</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"></td>
+            <td>TSD/IT</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+
+        <tr>
+            <td>Total Addition</td>
+            <td>8,700.00</td>
+            <td>Total Deduction</td>
+            <td>478.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"></td>
+            <th>NetSalary</th>
+            <td>8,222.0</td>
+        </tr>
+
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+
+    </tbody></table> <br>
+    Dollars Two Hundred And Twenty Two Only <br>
+        Cheque No.___________________ &nbsp;&nbsp;&nbsp;&nbsp;Name of Bank:________________________ <br>
+
+         Date:_____________________ <br> <br>
+         Signature of Employee:_______________________ &nbsp; Director:____________________
+         
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

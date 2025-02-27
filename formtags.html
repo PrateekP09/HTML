@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tag</h1>
+
+    <!-- 
+     the tags/elements of form
+        input tag - various types of input elements 
+        label tag - to add label to input
+        textarea tag - mutiline text input
+        select tag - dropdown input
+        fieldset tag - draw a border line around the form
+        legend tag - to add the title by  breaking the fieldset
+        
+        the attributes
+            action - in action you are gng to specify the action path/ server address
+            method - decides the type of input being sent to server
+                -get = prints data in the address bar.
+                -post = hides the data
+            autocomplete - (on) accept the cached history of browser, (off) won't accept the cache history
+            enctype - application/x-www-form-urlencoded (default format)
+                      multipart/form-data = select only when you have input type file 
+                      text/plain (not majorly used) not preferable
+     -->          
+<form action="" enctype=" application/x-www-form-urlencoded" autocomplete="off" method="post">
+    <fieldset>
+        <legend>Login Form</legend>
+
+        <label for="user">your username</label>
+         <input type="text" name="user" id="user"  placeholder="Enter your username" value="user@gmail.com" readonly required>  
+
+         <br> <br>
+         <label for="pass"> your password</label>
+         <input type="password" name="pass" id="pass" placeholder="min 6 and max 12 characters" minlength="6" maxlength="12" required>
+
+         <br> <br>
+         <input type="submit" value="Login">
+         <input type="reset" value="clear">
+    </fieldset>
+
+</form>
+<!-- input attributes 
+     type = decides the type of input tag
+            (text, number, password, email, checkbox, radio, file, date, date-time, date-time-local, time,
+             month, week, color, search, tel, submit, reset, hidden )
+        name = mandatory for all inputs(field name)
+        id =selector property
+        placeholder = hint for user
+        required = mandatory to fill form input
+        value = deafult value
+        readonly = restrict the write operation for user 
+        disable = disable the input 
+        minlength = min input length(only for string)
+        maxlength = max input length(only for string)
+        min = minimum for numbers
+        max = maximum for numbers
+             -->
+</body>
+</html>
